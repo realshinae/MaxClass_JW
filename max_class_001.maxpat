@@ -81,14 +81,88 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 17.5, 233.5, 135.0, 22.0 ],
+									"text" : "pvar metronome_power"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "live.text",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 68.0, 43.0, 44.0, 15.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_shortname" : "live.text",
+											"parameter_enum" : [ "val1", "val2" ],
+											"parameter_type" : 2,
+											"parameter_longname" : "live.text",
+											"parameter_mmax" : 1.0
+										}
+
+									}
+,
+									"text" : "off",
+									"texton" : "on",
+									"varname" : "metronome_power"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Ableton Sans Light Regular",
+									"id" : "obj-17",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 12.75, 40.0, 47.5, 21.0 ],
+									"text" : "on/off"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "live.line",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 12.75, 175.0, 281.5, 5.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Ableton Sans Light Regular",
+									"fontsize" : 18.0,
+									"id" : "obj-10",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 12.75, 7.5, 179.0, 28.0 ],
+									"text" : "Realshine Metronome"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-28",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 29.5, 155.25, 53.0, 22.0 ],
+									"patching_rect" : [ 17.5, 414.25, 53.0, 22.0 ],
 									"text" : "unjoin 3"
 								}
 
@@ -100,7 +174,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 29.5, 115.75, 77.0, 22.0 ],
+									"patching_rect" : [ 17.5, 374.75, 77.0, 22.0 ],
 									"text" : "60 127 1000"
 								}
 
@@ -112,7 +186,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "float" ],
-									"patching_rect" : [ 29.5, 202.75, 63.0, 22.0 ],
+									"patching_rect" : [ 17.5, 461.75, 63.0, 22.0 ],
 									"text" : "makenote"
 								}
 
@@ -123,7 +197,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 0,
-									"patching_rect" : [ 29.5, 251.25, 51.0, 22.0 ],
+									"patching_rect" : [ 17.5, 510.25, 51.0, 22.0 ],
 									"text" : "noteout"
 								}
 
@@ -136,7 +210,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 117.75, 78.75, 24.0, 24.0 ]
+									"patching_rect" : [ 105.75, 337.75, 24.0, 24.0 ]
 								}
 
 							}
@@ -148,7 +222,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 117.75, 13.5, 24.0, 24.0 ]
+									"patching_rect" : [ 105.75, 272.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -159,7 +233,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 117.75, 45.75, 69.0, 22.0 ],
+									"patching_rect" : [ 105.75, 304.75, 69.0, 22.0 ],
 									"text" : "metro 1000"
 								}
 
@@ -172,7 +246,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 29.5, 78.75, 24.0, 24.0 ]
+									"patching_rect" : [ 17.5, 337.75, 24.0, 24.0 ]
 								}
 
 							}
@@ -184,7 +258,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 29.5, 13.5, 24.0, 24.0 ]
+									"patching_rect" : [ 17.5, 272.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -195,7 +269,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 29.5, 45.750007629394531, 65.0, 22.0 ],
+									"patching_rect" : [ 17.5, 304.75, 65.0, 22.0 ],
 									"text" : "metro 1 hz"
 								}
 
@@ -247,6 +321,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-29", 0 ]
 								}
 
 							}
@@ -310,7 +391,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 1695.0, 436.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -337,7 +418,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-33",
@@ -516,7 +596,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 1910.0, 549.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -691,6 +771,14 @@
 			}
  ],
 		"lines" : [  ],
+		"parameters" : 		{
+			"obj-37::obj-21" : [ "live.text", "live.text", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
